@@ -1,21 +1,30 @@
-# Me_Bot
-A simple tool to make a bot that speaks like you, simply learning from your WhatsApp Chats.
+# WhatsApp ChatBot => recent extended GPT
 
-Instructions:-
 
-1. From WhatsApp on your phone, go to any chat and export it by going into the settings. Move the txt file that you receive inside the Me_Bot folder.
+Create a Personalized Chatbot Using Your WhatsApp Conversations:
 
-2. Run the clean_whatsapp_chats.py script using the command. Before running, change the names of the people by changing YOUR_NAME and OTHER_NAME in the scripts according to the txt file you have for your chats.
+WhatsApp Users:
 
-`python clean_whatsapp_chats.py whatsapp_chat.txt`
+Exporting Chat: Navigate to a chat in your WhatsApp application. Access settings and select the option to export your chat.
 
-3. Run the prepare_files.ipynb ipython notebook.
+Edit Script: Before running the provided script, customize the placeholders 'YOUR_NAME' and 'OTHER_NAME' in the clean_whatsapp_chats.py script to match names from your chat file.
 
-4. Run the Me_Bot.ipynb file and you can play with the bot at the bottom!
+Run Script: Execute the following command:
 
-## For wechat user:
-Wechat chat history is save in SQLite Database, therefore you need to export from you Phone.
-Basically, if you have a iPhone, there are the steps to get the database file:
-1. Use iTunes to backup your phone (unselect encrypt backup)
-2. Use iTools to open the backup file and get a copy of your database file named MM.sqlite
-3. run `python clean_wechat_chats.py YOUR_DATABASE_PATH YOUR_FRIEND_ID`
+python clean_whatsapp_chats.py whatsapp_chat.txt
+
+Jupyter Notebook Steps:
+
+First, initiate the prepare_files.ipynb notebook.
+Fun awaits! Engage with your personalized bot at the bottom of this notebook.
+For WeChat Enthusiasts:
+
+WeChat preserves your chat history in an SQLite database. To fetch this:
+
+Backup with iTunes: Use iTunes to back up your iPhone, ensuring you deselect the 'encrypt backup' option.
+
+Extract Database File: With the help of iTools, access your backup.
+
+Run WeChat Script: Implement the following command:
+
+python clean_wechat_chats.py YOUR_DATABASE_PATH 
